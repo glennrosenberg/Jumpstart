@@ -38,6 +38,8 @@ h2 {
 
 .jumbotron-bike {
   background-image: url("../images/jumbotron-bike.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .jtc {
@@ -78,6 +80,12 @@ h2 {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
 }
 
+@media only screen and (max-width: 425px) {
+  .jumbotron h1 {
+    font-size: 5.7rem;
+  }
+}
+
 /* Featured project section */
 
 .featured-project h2 {
@@ -90,9 +98,14 @@ h2 {
   opacity: 0.7;
 }
 
+.product-categories li {
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.7);
+}
+
 /* Project section */
 
-.projects {
+.project {
   padding-bottom: 5.85rem;
 }
 
@@ -111,5 +124,6 @@ strong {
 }
 
 .ideas p {
-  width 42rem;
+  max-width: 42rem;
+  margin: auto;
 }
